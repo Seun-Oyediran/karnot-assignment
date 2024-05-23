@@ -83,11 +83,19 @@ body {
         &__label {
           color: var(--muted-text);
           font-size: 1.1rem;
+
+          @include screen("sm") {
+            font-size: 0.9rem;
+          }
         }
 
         &__value {
           font-size: 1.1rem;
           color: var(--primary-text);
+
+          @include screen("sm") {
+            font-size: 0.9rem;
+          }
 
           &__left {
             color: var(--primary-blue);
@@ -113,6 +121,10 @@ body {
 
         &__text {
           font-size: 2.5rem;
+
+          @include screen("sm") {
+            font-size: 2rem;
+          }
         }
 
         &__left {
@@ -134,7 +146,7 @@ body {
       &__date {
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 0.25rem;
 
         &__label {
           color: var(--muted-text);
