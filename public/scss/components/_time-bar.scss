@@ -1,0 +1,39 @@
+.app_time_bar {
+  display: flex;
+  border: 1px solid var(--muted-text);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  gap: 0.25rem;
+
+  &__btn {
+    all: unset;
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--muted-text);
+    position: relative;
+
+    &__ctt {
+      position: relative;
+      z-index: 9;
+    }
+
+    &__bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+      background-color: #28323e;
+    }
+  }
+
+  &__btn.active {
+    color: var(--primary-text);
+  }
+}
